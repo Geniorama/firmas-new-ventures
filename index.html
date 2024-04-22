@@ -60,7 +60,7 @@
         </div>
 
         <!-- Formulario -->
-        <form action="" class="mt-5">
+        <form id="form-nvc" action="" class="mt-5">
           <div class="row">
             <div class="col-12 col-md">
               <div class="form-group mt-4">
@@ -69,6 +69,8 @@
                   placeholder="Ej: Emma Stone"
                   type="text"
                   class="form-control"
+                  id="input-nombre"
+                  data-target="#text-nombre"
                 />
               </div>
             </div>
@@ -80,6 +82,8 @@
                   placeholder="Ej: Marketing Director"
                   type="text"
                   class="form-control"
+                  id="input-cargo"
+                  data-target="#text-cargo"
                 />
               </div>
             </div>
@@ -91,6 +95,7 @@
                   placeholder="Ej: ella/she"
                   type="text"
                   class="form-control"
+                  data-target="#text-pronombre"
                 />
               </div>
             </div>
@@ -152,7 +157,7 @@
               >
                 Sylvia Rugeles Rugeles
               </p>
-              <p style="margin: 0; font-size: 15px; font-weight: bold;">
+              <p id="text-cargo" style="margin: 0; font-size: 15px; font-weight: bold;">
                 Marketing and Communications Manager
               </p>
               <p style="margin: 0; font-size: 15px">ella/she</p>
@@ -258,5 +263,6 @@
         initialCountry: "mx",
       });
     </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
