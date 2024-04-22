@@ -8,8 +8,9 @@ if(form){
         const target = el.dataset.target
 
         if(target){
-            el.addEventListener('keypress', function(){
-                
+            el.addEventListener('input', function(){
+                const text = document.querySelector(`${target}`)
+                text.innerText = el.value
             })
         }
     })
